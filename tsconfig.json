@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["esnext", "dom"],
+    "jsx": "react-native",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@playground/shared": ["packages/shared/src"],
+      "@playground/react-native-demo": ["packages/react-native-demo/src"]
+    }
+  },
+  "references": [
+    { "path": "packages/shared" },
+    { "path": "packages/react-native-demo" }
+  ],
+  "include": ["packages/*/src/**/*"],
+  "exclude": ["node_modules", "dist", "**/dist", "**/*.test.ts"]
+}

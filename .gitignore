@@ -1,0 +1,11 @@
+node_modules
+packages/**/node_modules
+.DS_Store
+dist
+.env
+*.log
+coverage
+.idea
+.vscode
+*.iml 
+node_modules

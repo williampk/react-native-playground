@@ -1,0 +1,28 @@
+{
+  "name": "react-native-playground",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/metro",
+      "**/metro-**"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/runtime": "^7.22.15",
+    "metro": "^0.77.0",
+    "metro-config": "^0.77.0",
+    "metro-core": "^0.77.0",
+    "metro-react-native-babel-preset": "^0.77.0",
+    "metro-resolver": "^0.77.0"
+  },
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test"
+  }
+}
